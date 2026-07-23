@@ -1,4 +1,4 @@
-import { useLocalizedField } from '@/hooks/useLocalizedField'
+
 import './TestimontialCard.scss'
 
 type Props = {
