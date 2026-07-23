@@ -1,0 +1,96 @@
+// TestimonialCard.scss
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700;900&display=swap');
+
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+.t-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-top: 3px solid $red;
+    padding: 32px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    clip-path: polygon(12px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 12px);
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+    &:hover {
+        border-color: $red;
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(232, 25, 44, 0.12);
+    }
+
+    &__qmark {
+        font-family: Georgia, serif;
+        font-size: 64px;
+        color: $red;
+        line-height: 0.6;
+        flex-shrink: 0;
+    }
+
+    &__text {
+        font-family: $font;
+        font-size: 12.5px;
+        color: var(--text-secondary);
+        font-style: italic;
+        line-height: 1.9;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0;
+        flex: 1;
+    }
+
+    &__divider {
+        width: 40px;
+        height: 2px;
+        background: $red;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    &__avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid $red;
+        display: block;
+        flex-shrink: 0;
+
+        &--initials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            color: $red;
+            font-family: $font;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &__name {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-primary);
+        margin: 0 0 4px;
+    }
+
+    &__role {
+        font-family: $font;
+        font-size: 10px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        margin: 0;
+    }
+}

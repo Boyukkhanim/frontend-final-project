@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;900&display=swap');
+$red: #e8192c;
+$dark: #0d1117;
+$font: 'Chakra Petch', sans-serif;
+
+// ── 404 Section ───────────────────────────────────────────
+.not-found {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    // Qırmızı subtil glow — yuxarıdan
+    &::before {
+        content: '';
+        position: absolute;
+        top: -80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 240px;
+        background: radial-gradient(ellipse at center, rgba(232, 25, 44, 0.12) 0%, transparent 70%);
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        text-align: center;
+        padding: 40px 16px 80px;
+    }
+
+    &__img {
+        width: clamp(280px, 50vw, 640px);
+        object-fit: contain;
+        user-select: none;
+        filter: drop-shadow(0 0 48px rgba(232, 25, 44, 0.15));
+    }
+
+    &__text {
+        font-family: $font;
+        font-size: clamp(13px, 2vw, 18px);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #888;
+        margin: 0;
+
+        // qırmızı xətt iki tərəfdə
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 1px;
+            background: $red;
+            flex-shrink: 0;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 15px 48px;
+        background: $red;
+        color: #fff;
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        text-decoration: none;
+        clip-path: polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%);
+        transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+        box-shadow: 0 4px 24px rgba(232, 25, 44, 0.3);
+
+        &:hover {
+            background: #c0101f;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 32px rgba(232, 25, 44, 0.5);
+        }
+    }
+}

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;900&display=swap');
+
+$red: #e8192c;
+$dark: #0d1117;
+$font: 'Chakra Petch', sans-serif;
+
+.order-success {
+    min-height: 100vh;
+    background: $dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 480px;
+        width: 100%;
+        padding: 60px 40px;
+        background: #0f1419;
+        border: 1px solid #1e2530;
+        border-radius: 8px;
+
+        @media (max-width: 480px) {
+            padding: 40px 24px;
+        }
+    }
+
+    // ── Animated checkmark ──────────────────────────────────
+    &__icon-wrap {
+        margin-bottom: 32px;
+    }
+
+    &__checkmark {
+        width: 72px;
+        height: 72px;
+        stroke: $red;
+        stroke-width: 2;
+    }
+
+    &__circle {
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        stroke-width: 2;
+        stroke: $red;
+        animation: stroke-circle 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+
+    &__check {
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        stroke: $red;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        animation: stroke-check 0.4s cubic-bezier(0.65, 0, 0.45, 1) 0.5s forwards;
+    }
+
+    // ── Text ────────────────────────────────────────────────
+    &__title {
+        font-family: $font;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin: 0 0 12px;
+    }
+
+    &__subtitle {
+        font-family: $font;
+        color: #aaa;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        line-height: 1.6;
+        margin: 0 0 8px;
+    }
+
+    &__redirect {
+        font-family: $font;
+        color: #555;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        margin: 0 0 36px;
+    }
+
+    // ── Button ──────────────────────────────────────────────
+    &__btn {
+        padding: 14px 40px;
+        background: $red;
+        color: #fff;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+
+        &:hover {
+            background: darken($red, 8%);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba($red, 0.4);
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: none;
+        }
+    }
+}
+
+// ── Animations ───────────────────────────────────────────────
+@keyframes stroke-circle {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes stroke-check {
+    to {
+        stroke-dashoffset: 0;
+    }
+}

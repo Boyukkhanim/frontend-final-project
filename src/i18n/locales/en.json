@@ -1,0 +1,412 @@
+{
+    "nav": {
+        "home": "HOME",
+        "pages": "PAGES",
+        "shop": "SHOP",
+        "blog": "BLOG",
+        "contact": "CONTACT US",
+        "about": "ABOUT US",
+        "ourGames": "OUR GAMES",
+        "gameDetails": "GAME DETAILS",
+        "ourTeam": "OUR TEAM",
+        "testimonial": "TESTIMONIAL",
+        "wishlist": "WISHLIST",
+        "faq": "FAQ",
+        "shopPage": "SHOP PAGE",
+        "shopCart": "SHOP CART",
+        "shopDetails": "SHOP DETAILS",
+        "checkout": "CHECKOUT",
+        "blogGrid": "BLOG GRID",
+        "blogStandard": "BLOG STANDARD",
+        "blogDetails": "BLOG DETAILS"
+    },
+    "wishlist": {
+        "title": "Wishlist",
+        "home": "Home",
+        "empty": "Your wishlist is empty.",
+        "go_shop": "Go to Shop",
+        "items": "items",
+        "clear_all": "Clear All",
+        "remove": "Remove",
+        "add_cart": "Add to Cart",
+        "quick_view": "Quick View",
+        "view_detail": "View Detail",
+        "in_cart": "✓ In Cart",
+        "current": "Wishlist"
+    },
+    "cart": {
+        "emptyTitle": "YOUR CART IS",
+        "emptyTitleRed": "EMPTY",
+        "emptyDesc": "Looks like you haven't added anything yet",
+        "goShop": "GO TO SHOP",
+        "titleTag": "YOUR",
+        "title": "SHOPPING",
+        "titleRed": "CART",
+        "product": "PRODUCT",
+        "price": "PRICE",
+        "quantity": "QUANTITY",
+        "total": "TOTAL",
+        "continueShopping": "CONTINUE SHOPPING",
+        "clearCart": "CLEAR CART",
+        "orderSummary": "ORDER",
+        "orderSummaryRed": "SUMMARY",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "totalLabel": "TOTAL",
+        "couponPlaceholder": "Coupon code",
+        "apply": "APPLY",
+        "checkout": "PROCEED TO CHECKOUT"
+    },
+    "shopDetails": {
+        "heroTitle": "PRODUCT DETAILS",
+        "heroCurrent": "Product Details",
+        "loading": "Loading...",
+        "notFound": "Product not found.",
+        "brand": "XPORTS GEAR",
+        "reviews": "({{count}} Reviews)",
+        "availability": "Availability",
+        "inStock": "In Stock",
+        "productCode": "Product Code",
+        "addToCart": "ADD TO CART",
+        "buyNow": "BUY NOW",
+        "addToWishlist": "♡ ADD TO WISHLIST",
+        "addedToWishlist": "♥ ADDED TO WISHLIST",
+        "descriptionText1": "High-quality gaming accessory designed for professional and casual gamers alike.",
+        "descriptionText2": "Compatible with all major gaming platforms. Ergonomic design for extended gameplay.",
+        "tabs": {
+            "description": "DESCRIPTION",
+            "specs": "SPECS",
+            "reviews": "REVIEWS"
+        },
+        "specs": {
+            "brand": "Brand",
+            "model": "Model",
+            "price": "Price",
+            "discount": "Discount",
+            "status": "Status",
+            "warranty": "Warranty",
+            "warrantyValue": "1 Year"
+        },
+        "reviewText": "Amazing product! Great quality and fast delivery.",
+        "moreProducts": "MORE PRODUCTS",
+        "related": "RELATED",
+        "products": "PRODUCTS"
+    },
+    "shopp": {
+        "title": "Shop",
+        "current": "Shop",
+        "searchPlaceholder": "Search products...",
+        "sort": {
+            "default": "Default sorting",
+            "priceAsc": "Price: Low to High",
+            "priceDesc": "Price: High to Low",
+            "name": "Name: A-Z"
+        },
+        "showing": "Showing {{count}} of {{total}} products",
+        "loading": "Loading...",
+        "error": "Error: {{error}}",
+        "noProducts": "No products found.",
+        "pagination": {
+            "prev": "Previous page",
+            "next": "Next page",
+            "page": "Page {{page}}"
+        }
+    },
+    "home": {
+        "hero__sub": "Your Future Ultimate Gaming World . . .",
+        "hero__title": "Level Up",
+        "hero__span": "New Gaming",
+        "hero__br": "Experience",
+        "hero__btnOne": "Purchase Game",
+        "hero__btnTwo": "View More",
+        "about_tag": "About Xports",
+        "about_title": "The Journey Of",
+        "about_span": "The Xports",
+        "about_desc": "A game studio crafting exciting, high-quality video games, prioritizing immersive gameplay and mechanics.",
+        "about_feature_card": "A game studio crafting exciting, video games",
+        "years": "Years",
+        "about_br": "Experience",
+        "gameplay_badge": "LOVE TO PLAY",
+        "gameplay_title": "SWEET REVENGE",
+        "gameplay_title_br": "GAMEPLAY",
+        "gameplay_btn": "PLAY NOW"
+    },
+    "hero4": {
+        "tag": "Technically Stabilized",
+        "title": "High-Resolution Games",
+        "error": "Error:"
+    },
+    "ourBestTeam": {
+        "subtitle": "OUR BEST GAMER",
+        "title": "OUR BEST",
+        "titleBr": "GAMING TEAM",
+        "prevAriaLabel": "Previous",
+        "nextAriaLabel": "Next"
+    },
+    "testimonial": {
+        "tag": "Our Testimonials",
+        "title": "Our Testimonials",
+        "clientsRating": "1200+ Clients Rating."
+    },
+    "testimoniall": {
+        "tag": "Testimonials",
+        "title": "WHAT CLIENTS SAY",
+        "clientsRating": "Our clients rating",
+        "t1": {
+            "name": "Daniel Smith",
+            "role": "Senior Engineer",
+            "text": "This digital agency completely transformed our online presence. Their expertise, creativity, and attention to detail exceeded all our expectations."
+        },
+        "t2": {
+            "name": "Alex Johnson",
+            "role": "Lead Designer",
+            "text": "Absolutely phenomenal team. The level of polish and precision in every deliverable was unlike anything we had experienced before."
+        },
+        "t3": {
+            "name": "Maria Rivera",
+            "role": "Product Manager",
+            "text": "From kickoff to launch, the process was seamless. They understood our vision immediately and delivered a product that exceeded every benchmark."
+        },
+        "t4": {
+            "name": "Kevin Torres",
+            "role": "CTO",
+            "text": "The technical depth of this team is staggering. They solved complex architecture problems in days that our internal team had struggled with for months."
+        }
+    },
+    "join": {
+        "titleLine1": "Join Xports To",
+        "titleLine2": "Become Next Pro Gamer",
+        "titleLine3": "Today !",
+        "btn": "Join Community"
+    },
+    "latestBlogs": {
+        "tag": "Latest News",
+        "title": "Latest News & Blog",
+        "viewAll": "View All Blogs"
+    },
+    "blogModal": {
+        "close": "Close"
+    },
+    "pageHero": {
+        "home": "Home"
+    },
+    "ourBlog": {
+        "title": "Blog",
+        "current": "Blog"
+    },
+    "ourGames": {
+        "title": "Our Games",
+        "current": "Our Games",
+        "error": "Error:"
+    },
+    "ourTeam": {
+        "title": "Our Teams",
+        "current": "Our Teams"
+    },
+    "contactt": {
+        "title": "Contact",
+        "current": "Contact",
+        "formTitle": "SEND A MESSAGE",
+        "formSub": "Fill out the form and we'll get back to you shortly.",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "John Doe",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "john@example.com",
+        "messageLabel": "Message",
+        "messagePlaceholder": "Write your message here...",
+        "submit": "SEND MESSAGE",
+        "sending": "SENDING...",
+        "success": "Message sent successfully!",
+        "cardTitle": "GET IN TOUCH",
+        "cardSub": "We're here to help. Reach us anytime.",
+        "callLabel": "Call Us",
+        "mailLabel": "Email Us",
+        "locationLabel": "Our Location"
+    },
+    "checkout": {
+        "title": "Checkout",
+        "current": "Checkout",
+        "selectOne": "Select Any One",
+        "creditDebit": "Credit/Debit Cards",
+        "paypal": "PayPal",
+        "payoneer": "Payoneer",
+        "visa": "Visa",
+        "mastercard": "Mastercard",
+        "fastpay": "Fastpay",
+        "billingAddress": "Billing Address",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Your Email",
+        "address": "Address",
+        "paymentMethods": "Payment Methods",
+        "cardNumber": "Card Number",
+        "expiryDate": "Expiry Date",
+        "cvv": "Cvc / Cvv",
+        "cvvPlaceholder": "3 Digits",
+        "nameOnCard": "Name On Card",
+        "namePlaceholder": "Name",
+        "saveCard": "Save For My Next Payment",
+        "payNow": "Payment Now",
+        "orderSummary": "Order Summary",
+        "subtotal": "Subtotal",
+        "total": "Total",
+        "coupon": "Coupon Code",
+        "apply": "Apply",
+        "processing": "Processing..."
+    },
+    "footer": {
+        "desc": "A game studio crafting exciting, high-quality video games, prioritizing immersive gameplay and mechanics. Hac habitasse platea.",
+        "studioTitle": "Our Studio",
+        "shopTitle": "Shop",
+        "downloadTitle": "Download Our Games",
+        "aboutUs": "About Us",
+        "ourGames": "Our Games",
+        "ourTeam": "Our Team",
+        "testimonial": "Testimonial",
+        "epicGallery": "Epic Gallery",
+        "shop": "Shop",
+        "cart": "Cart",
+        "shopDetails": "Shop Details",
+        "checkout": "Checkout",
+        "getItOn": "Get it on",
+        "copy": "© 2026 Xports. All Rights Reserved.",
+        "comingSoon": "Coming Soon",
+        "scrollTop": "Scroll to top"
+    },
+    "gamedetail": {
+        "close": "Close",
+        "rating": "Rating",
+        "players": "Players",
+        "platform": "Platform"
+    },
+    "counter": {
+        "market": "Years on the Market",
+        "specialists": "Highly Skilled Specialists",
+        "games": "Games Completed",
+        "clients": "Clients Recommend Us"
+    },
+    "testimonialPage": {
+        "title": "Testimonials",
+        "current": "Testimonials",
+        "error": "Error:"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "current": "Contact Us"
+    },
+    "gameDetails": {
+        "title": "Our Games",
+        "current": "Our Games",
+        "error": "Error:"
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "current": "About Us"
+    },
+    "promoSection": {
+        "marqueeRow1": "The Last Stand Championship",
+        "marqueeRow2": "Game Over Warrior's Reign",
+        "leftTag": "World Best Facilities Game",
+        "leftTitle": "Forging Legends",
+        "leftTitleBr": "Gaming world!",
+        "leftBtn": "View More",
+        "rightTag": "Releases The Latest Game",
+        "rightTitle": "Game On, Power",
+        "rightTitleBr": "Up, Win Big!",
+        "rightBtn": "View More"
+    },
+    "acs": {
+        "tag": "Gaming Accessories",
+        "title": "Gear Up Gaming Accessories",
+        "loading": "Loading...",
+        "error": "Error:",
+        "regular_price": "Regular Price:",
+        "discount_price": "Discount Price:",
+        "code": "Code:",
+        "status": "Status:",
+        "in_stock": "IN STOCK",
+        "reviews": "(24 Customer Reviews)",
+        "add_to_cart": "Add to Cart",
+        "buy_now": "Buy Now",
+        "add_to_wishlist": "Add to Wishlist",
+        "added_to_wishlist": "Added to Wishlist",
+        "brand": "XPORTS GEAR",
+        "off": "OFF",
+        "like": "Like",
+        "add_to_cart_aria": "Add to Cart",
+        "quick_view": "Quick View",
+        "view_detail": "View Detail"
+    },
+    "auth": {
+        "welcomeBack": "WELCOME BACK",
+        "loginAccount": "LOGIN TO YOUR ACCOUNT",
+        "loginSubtitle": "Enter your credentials to access your account",
+        "email": "EMAIL ADDRESS",
+        "emailPlaceholder": "Enter your email",
+        "password": "PASSWORD",
+        "passwordPlaceholder": "Enter your password",
+        "login": "LOGIN",
+        "loading": "LOADING...",
+        "noAccount": "Don't have an account?",
+        "register": "Register",
+        "signIn": "SIGN IN",
+        "createAccount": "CREATE ACCOUNT",
+        "fullName": "FULL NAME",
+        "confirmPassword": "CONFIRM PASSWORD",
+        "phone": "PHONE NUMBER",
+        "haveAccount": "Already have an account?",
+        "joinUs": "JOIN US",
+        "logout": "LOGOUT",
+        "registerSubtitle": "Register to start your gaming journey",
+        "accountRed": "ACCOUNT",
+        "fullNamePlaceholder": "Enter your full name",
+        "phonePlaceholder": "Enter your phone number",
+        "confirmPasswordPlaceholder": "Repeat your password",
+        "passwordMismatch": "Passwords do not match",
+        "passwordShort": "Password must be at least 6 characters",
+        "createAccountBtn": "CREATE ACCOUNT"
+    },
+    "shop": {
+        "title": "OUR SHOP",
+        "ourProducts": "OUR PRODUCTS",
+        "search": "Search products...",
+        "sortDefault": "Default sorting",
+        "sortPriceAsc": "Price: Low to High",
+        "sortPriceDesc": "Price: High to Low",
+        "sortName": "Name: A-Z",
+        "showing": "Showing",
+        "of": "of",
+        "products": "products",
+        "noProducts": "No products found.",
+        "loading": "Loading...",
+        "addToCart": "ADD TO CART",
+        "buyNow": "BUY NOW",
+        "addToWishlist": "ADD TO WISHLIST",
+        "addedToWishlist": "ADDED TO WISHLIST",
+        "inStock": "In Stock",
+        "productDetails": "PRODUCT DETAILS",
+        "relatedProducts": "RELATED PRODUCTS",
+        "moreProducts": "MORE PRODUCTS"
+    },
+    "faq": {
+        "title": "FAQ",
+        "current": "FAQ",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "desc": "Find answers to the most common questions about our products and services.",
+        "needHelp": "NEED HELP?",
+        "needHelpSub": "Can't find what you're looking for? Reach us directly.",
+        "callUs": "Call Us",
+        "mailUs": "Email Us",
+        "location": "Our Location",
+        "q1": "What payment methods do you accept?",
+        "a1": "We accept all major credit cards, PayPal, and bank transfers. All transactions are secured with SSL encryption.",
+        "q2": "How long does shipping take?",
+        "a2": "Standard shipping takes 5–7 business days. Express shipping is available for 2–3 business days.",
+        "q3": "Can I return a product?",
+        "a3": "Yes, we offer a 30-day return policy. Items must be unused and in original packaging.",
+        "q4": "Do your products come with a warranty?",
+        "a4": "All our products come with a minimum 1-year manufacturer warranty. Some items include extended coverage.",
+        "q5": "How can I track my order?",
+        "a5": "Once your order ships, you'll receive a tracking number via email. You can also check your order status in your account."
+    }
+}

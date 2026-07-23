@@ -1,0 +1,40 @@
+// Testimontial.scss
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+.about-page {
+    width: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    transition: background-color 0.3s ease;
+}
+
+.t-grid-section {
+    padding: 150px 150px 80px;
+
+    @media (max-width: 768px) {
+        padding: 0 32px 60px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0 16px 48px;
+    }
+}
+
+.t-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}

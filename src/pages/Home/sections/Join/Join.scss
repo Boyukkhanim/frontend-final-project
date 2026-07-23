@@ -1,0 +1,174 @@
+.join {
+    position: relative;
+    width: 100%;
+    min-height: 260px;
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-family: 'Chakra Petch', sans-serif;
+
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(105deg,
+                var(--bg-primary) 0%,
+                var(--bg-primary) 30%,
+                rgba(20, 80, 30, 0.85) 55%,
+                rgba(10, 60, 20, 0.95) 100%);
+        z-index: 1;
+
+        @media (max-width: 768px) {
+            background: linear-gradient(180deg,
+                    var(--bg-primary) 0%,
+                    rgba(10, 60, 20, 0.95) 100%);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 38%;
+        height: 100%;
+        background: var(--bg-primary);
+        clip-path: polygon(0 0, 88% 0, 72% 100%, 0 100%);
+        z-index: 2;
+
+        // Tablet
+        @media (max-width: 1024px) {
+            width: 30%;
+        }
+
+        // Mobil — gizlət, tam background olsun
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__stripes {
+        position: absolute;
+        left: 26%;
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        z-index: 3;
+        transform: skewX(-14deg);
+
+        // Tablet
+        @media (max-width: 1024px) {
+            left: 18%;
+        }
+
+        // Mobil — sola çək, dekorativ qalsın
+        @media (max-width: 768px) {
+            left: -10px;
+            gap: 7px;
+
+            span {
+                width: 7px;
+                height: 60%;
+            }
+        }
+
+        span {
+            display: block;
+            width: 10px;
+            height: 75%;
+            background: #e8192c;
+            border-radius: 2px;
+
+            &:nth-child(1) {
+                opacity: 1;
+            }
+
+            &:nth-child(2) {
+                opacity: 0.7;
+            }
+
+            &:nth-child(3) {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 4;
+        padding: 48px 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-left: 30%;
+
+        // Tablet
+        @media (max-width: 1024px) {
+            margin-left: 22%;
+            padding: 40px 40px;
+        }
+
+        // Kiçik tablet
+        @media (max-width: 768px) {
+            margin-left: 0;
+            padding: 48px 24px 48px 52px; // sol padding — stripes üçün boşluq
+            gap: 22px;
+        }
+
+        // Mobil
+        @media (max-width: 480px) {
+            padding: 40px 20px 40px 44px;
+            gap: 18px;
+        }
+    }
+
+    &__title {
+        font-size: clamp(22px, 3vw, 42px);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--text-primary);
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        margin: 0;
+
+        // Tablet
+        @media (max-width: 1024px) {
+            font-size: clamp(20px, 2.5vw, 34px);
+        }
+
+        // Mobil
+        @media (max-width: 480px) {
+            font-size: clamp(18px, 5vw, 26px);
+            letter-spacing: 0.01em;
+        }
+    }
+
+    &__btn {
+        align-self: flex-start;
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #e8192c;
+        background: #fff;
+        border: none;
+        padding: 14px 36px;
+        cursor: pointer;
+        transition: background 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background: #e8192c;
+            color: #fff;
+        }
+
+        // Mobil — tam genişlik
+        @media (max-width: 480px) {
+            align-self: stretch;
+            text-align: center;
+            padding: 14px 24px;
+        }
+    }
+}

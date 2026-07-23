@@ -1,0 +1,112 @@
+// Counter.scss
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+.counter-section {
+    width: 100%;
+    background-color: var(--counter-bg);
+    padding: 80px 60px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+
+    @media (max-width: 768px) {
+        padding: 60px 32px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 48px 16px;
+    }
+
+    &__grid {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+        align-items: center;
+        justify-items: center;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @media (max-width: 560px) {
+            grid-template-columns: 1fr;
+            gap: 28px;
+        }
+    }
+}
+
+.counter-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &__circle {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        border: 1px solid var(--counter-border);
+        background: var(--counter-card-bg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        transition: border-color 0.3s ease, background 0.3s ease;
+
+        &:hover {
+            border-color: rgba(232, 25, 44, 0.5);
+        }
+
+        @media (max-width: 1200px) {
+            width: 240px;
+            height: 240px;
+        }
+
+        @media (max-width: 768px) {
+            width: 210px;
+            height: 210px;
+        }
+
+        @media (max-width: 480px) {
+            width: 240px;
+            height: 240px;
+        }
+    }
+
+    &__number {
+        font-family: $font;
+        font-size: clamp(48px, 5vw, 72px);
+        font-weight: 900;
+        color: var(--counter-number);
+        line-height: 1;
+        display: flex;
+        align-items: flex-start;
+        transition: color 0.3s ease;
+    }
+
+    &__suffix {
+        font-size: clamp(20px, 2vw, 30px);
+        font-weight: 900;
+        color: var(--counter-number);
+        margin-top: 8px;
+        margin-left: 2px;
+        transition: color 0.3s ease;
+    }
+
+    &__label {
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--counter-label);
+        text-align: center;
+        margin: 0;
+        padding: 0 20px;
+        transition: color 0.3s ease;
+    }
+}

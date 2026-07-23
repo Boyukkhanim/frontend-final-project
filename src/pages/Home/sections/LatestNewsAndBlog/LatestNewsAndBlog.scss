@@ -1,0 +1,118 @@
+.latest-blogs {
+    width: 100%;
+    background-color: var(--bg-primary);
+    padding: 80px 40px;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+
+    @media (max-width: 768px) {
+        padding: 60px 16px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 48px;
+        gap: 16px;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__header-left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__tag {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 28px;
+            height: 1px;
+            background: #e8192c;
+        }
+    }
+
+    &__title {
+        font-size: clamp(28px, 4vw, 56px);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--text-primary);
+        margin: 0;
+        line-height: 1;
+        letter-spacing: 0.02em;
+    }
+
+    &__view-all {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        background: transparent;
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+        padding: 12px 24px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        white-space: nowrap;
+        flex-shrink: 0;
+
+        &:hover {
+            background-color: #e8192c;
+            border-color: #e8192c;
+            color: #fff;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__skeleton {
+        background: linear-gradient(90deg,
+                var(--bg-secondary) 25%,
+                var(--bg-card) 50%,
+                var(--bg-secondary) 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+        border-radius: 4px;
+        height: 380px;
+        border: 1px solid var(--border-color);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

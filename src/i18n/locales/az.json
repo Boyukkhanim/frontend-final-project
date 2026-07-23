@@ -1,0 +1,412 @@
+{
+    "nav": {
+        "home": "ANA SƏHİFƏ",
+        "pages": "SƏHİFƏLƏR",
+        "shop": "MAĞAZA",
+        "blog": "BLOQ",
+        "contact": "BİZİMLƏ ƏLAQƏ",
+        "about": "HAQQIMIZDA",
+        "ourGames": "OYUNLARIMIZ",
+        "gameDetails": "OYUN DETALLARI",
+        "ourTeam": "KOMANDAMİZ",
+        "testimonial": "RƏYLƏr",
+        "wishlist": "istək siyahısı",
+        "faq": "TSS",
+        "shopPage": "MAĞAZA SƏHİFƏSİ",
+        "shopCart": "SƏBƏT",
+        "shopDetails": "MƏHSUL DETALLARI",
+        "checkout": "SIFARIŞ",
+        "blogGrid": "BLOQ ŞƏBƏKƏSİ",
+        "blogStandard": "STANDART BLOQ",
+        "blogDetails": "BLOQ DETALLARI"
+    },
+    "wishlist": {
+        "title": "İstək Siyahısı",
+        "home": "Əsas Səhifə",
+        "empty": "İstək siyahınız boşdur.",
+        "go_shop": "Mağazaya Get",
+        "items": "məhsul",
+        "clear_all": "Hamısını Sil",
+        "remove": "Sil",
+        "add_cart": "Səbətə Əlavə Et",
+        "quick_view": "Sürətli Baxış",
+        "view_detail": "Ətraflı Bax",
+        "in_cart": "✓ Səbətdə",
+        "current": "İstək Siyahısı"
+    },
+    "shopDetails": {
+        "heroTitle": "MƏHSUL TƏFSİLATI",
+        "heroCurrent": "Məhsul Təfsilatı",
+        "loading": "Yüklənir...",
+        "notFound": "Məhsul tapılmadı.",
+        "brand": "XPORTS GEAR",
+        "reviews": "({{count}} Rəy)",
+        "availability": "Mövcudluq",
+        "inStock": "Stokda var",
+        "productCode": "Məhsul Kodu",
+        "addToCart": "SƏBƏTƏ ƏLAVƏ ET",
+        "buyNow": "İNDİ AL",
+        "addToWishlist": "♡ İSTƏK SİYAHISINA ƏLAVƏ ET",
+        "addedToWishlist": "♥ İSTƏK SİYAHISINA ƏLAVƏ EDİLDİ",
+        "descriptionText1": "Peşəkar və həvəskar oyunçular üçün yüksək keyfiyyətli oyun aksessuarı.",
+        "descriptionText2": "Bütün əsas oyun platformaları ilə uyğundur. Uzun müddətli oyun üçün erqonomik dizayn.",
+        "tabs": {
+            "description": "TƏSVİR",
+            "specs": "XÜSUSİYYƏTLƏR",
+            "reviews": "RƏYLƏR"
+        },
+        "specs": {
+            "brand": "Brend",
+            "model": "Model",
+            "price": "Qiymət",
+            "discount": "Endirim",
+            "status": "Status",
+            "warranty": "Zəmanət",
+            "warrantyValue": "1 İl"
+        },
+        "reviewText": "Əla məhsul! Yüksək keyfiyyət və sürətli çatdırılma.",
+        "moreProducts": "DAHA ÇOX MƏHSUL",
+        "related": "OXŞAR",
+        "products": "MƏHSULLAR"
+    },
+    "cart": {
+        "emptyTitle": "SƏBƏTİNİZ",
+        "emptyTitleRed": "BOŞDUR",
+        "emptyDesc": "Hələ heç nə əlavə etməmisiniz",
+        "goShop": "MAĞAZAYA GET",
+        "titleTag": "SİZİN",
+        "title": "ALIŞVERİŞ",
+        "titleRed": "SƏBƏTİ",
+        "product": "MƏHSUL",
+        "price": "QİYMƏT",
+        "quantity": "MİQDAR",
+        "total": "CƏMİ",
+        "continueShopping": "ALIŞVERİŞƏ DAVAM ET",
+        "clearCart": "SƏBƏTİ TƏMİZLƏ",
+        "orderSummary": "SİFARİŞ",
+        "orderSummaryRed": "XÜLASƏSİ",
+        "subtotal": "Aralıq cəm",
+        "shipping": "Çatdırılma",
+        "totalLabel": "CƏMİ",
+        "couponPlaceholder": "Kupon kodu",
+        "apply": "TƏTBİQ ET",
+        "checkout": "ÖDƏNİŞƏ KEÇ"
+    },
+    "shopp": {
+        "title": "Mağaza",
+        "current": "Mağaza",
+        "searchPlaceholder": "Məhsul axtar...",
+        "sort": {
+            "default": "Standart sıralama",
+            "priceAsc": "Qiymət: Aşağıdan yuxarı",
+            "priceDesc": "Qiymət: Yuxarıdan aşağı",
+            "name": "Ad: A-Z"
+        },
+        "showing": "{{total}} məhsuldan {{count}} göstərilir",
+        "loading": "Yüklənir...",
+        "error": "Xəta: {{error}}",
+        "noProducts": "Məhsul tapılmadı.",
+        "pagination": {
+            "prev": "Əvvəlki səhifə",
+            "next": "Növbəti səhifə",
+            "page": "Səhifə {{page}}"
+        }
+    },
+    "home": {
+        "hero__sub": "Gələcəyin Ultimate Oyun Dünyası . . .",
+        "hero__title": "Səviyyəni Artır",
+        "hero__span": "Yeni Oyun",
+        "hero__br": "Təcrübəsi",
+        "hero__btnOne": "Oyun Al",
+        "hero__btnTwo": "Daha Çox Bax",
+        "about_tag": "Xports Haqqında",
+        "about_title": "Səyahəti",
+        "about_span": "Xports-un",
+        "about_desc": "Həyəcanlı, yüksək keyfiyyətli video oyunlar yaradan, immersiv oyun mexanikasına üstünlük verən oyun studiyası.",
+        "about_feature_card": "Həyəcanlı video oyunlar yaradan oyun studiyası",
+        "years": "İl",
+        "about_br": "Təcrübə",
+        "gameplay_badge": "OYNAMAĞI SEVİRİK",
+        "gameplay_title": "ŞIRIN İNTİQAM",
+        "gameplay_title_br": "OYUN PROSESİ",
+        "gameplay_btn": "İNDİ OYNA"
+    },
+    "hero4": {
+        "tag": "Texniki Cəhətdən Sabitləşdirilmiş",
+        "title": "Yüksək Çözünürlüklü Oyunlar",
+        "error": "Xəta:"
+    },
+    "ourBestTeam": {
+        "subtitle": "ƏN YAXŞI OYUNÇUMUZ",
+        "title": "ƏN YAXŞI",
+        "titleBr": "OYUN KOMANDAMİZ",
+        "prevAriaLabel": "Əvvəlki",
+        "nextAriaLabel": "Növbəti"
+    },
+    "testimonial": {
+        "tag": "Rəylərimiz",
+        "title": "Rəylərimiz",
+        "clientsRating": "1200+ Müştəri Reytinqi."
+    },
+    "join": {
+        "titleLine1": "Xports-a Qoşul və",
+        "titleLine2": "Növbəti Pro Oyunçu Ol",
+        "titleLine3": "Bu Gün !",
+        "btn": "İctimaiyyətə Qoşul"
+    },
+    "latestBlogs": {
+        "tag": "Son Xəbərlər",
+        "title": "Son Xəbərlər və Bloq",
+        "viewAll": "Bütün Bloqlara Bax"
+    },
+    "blogModal": {
+        "close": "Bağla"
+    },
+    "pageHero": {
+        "home": "Ana Səhifə"
+    },
+    "ourBlog": {
+        "title": "Bloq",
+        "current": "Bloq"
+    },
+    "gamedetail": {
+        "close": "Bağla",
+        "rating": "Reytinq",
+        "players": "Oyunçular",
+        "platform": "Platforma"
+    },
+    "ourGames": {
+        "title": "Oyunlarımız",
+        "current": "Oyunlarımız",
+        "error": "Xəta:"
+    },
+    "ourTeam": {
+        "title": "Komandamız",
+        "current": "Komandamız"
+    },
+    "contactt": {
+        "title": "Əlaqə",
+        "current": "Əlaqə",
+        "formTitle": "MESAJ GÖNDƏRİN",
+        "formSub": "Formu doldurun, qısa müddətdə sizinlə əlaqə saxlayacağıq.",
+        "nameLabel": "Ad Soyad",
+        "namePlaceholder": "Əli Əliyev",
+        "emailLabel": "E-poçt Ünvanı",
+        "emailPlaceholder": "ali@misal.com",
+        "messageLabel": "Mesaj",
+        "messagePlaceholder": "Mesajınızı buraya yazın...",
+        "submit": "MESAJ GÖNDƏR",
+        "sending": "GÖNDƏRİLİR...",
+        "success": "Mesaj uğurla göndərildi!",
+        "cardTitle": "ƏLAQƏYƏ KEÇİN",
+        "cardSub": "Sizə kömək etməyə hazırıq. İstənilən vaxt əlaqə saxlayın.",
+        "callLabel": "Zəng Edin",
+        "mailLabel": "E-poçt Yazın",
+        "locationLabel": "Ünvanımız"
+    },
+    "footer": {
+        "desc": "Maraqlı, yüksək keyfiyyətli video oyunlar yaradan oyun studiyası — sürükləyici oyun mexanikasına üstünlük verir.",
+        "studioTitle": "Studiomuz",
+        "shopTitle": "Mağaza",
+        "downloadTitle": "Oyunlarımızı Yüklə",
+        "aboutUs": "Haqqımızda",
+        "ourGames": "Oyunlarımız",
+        "ourTeam": "Komandamız",
+        "testimonial": "Rəylər",
+        "epicGallery": "Epik Qalereya",
+        "shop": "Mağaza",
+        "cart": "Səbət",
+        "shopDetails": "Mağaza Təfərrüatları",
+        "checkout": "Ödəniş",
+        "getItOn": "Əldə et",
+        "copy": "© 2026 Xports. Bütün hüquqlar qorunur.",
+        "comingSoon": "Tezliklə",
+        "scrollTop": "Yuxarı qayıt"
+    },
+    "testimoniall": {
+        "tag": "Rəylər",
+        "title": "MÜŞTƏRİLƏR NƏ DEYİR",
+        "clientsRating": "Müştəri reytinqimiz",
+        "t1": {
+            "name": "Daniel Smith",
+            "role": "Baş Mühəndis",
+            "text": "Bu rəqəmsal agentlik onlayn varlığımızı tamamilə dəyişdirdi. Onların peşəkarlığı və diqqəti bütün gözləntilərimizi aşdı."
+        },
+        "t2": {
+            "name": "Alex Johnson",
+            "role": "Aparıcı Dizayner",
+            "text": "Fenomenal komanda. Hər çatdırılmada cilalanma və dəqiqlik səviyyəsi əvvəllər yaşadıqlarımızdan fərqliydi."
+        },
+        "t3": {
+            "name": "Maria Rivera",
+            "role": "Məhsul Meneceri",
+            "text": "Başlanğıcdan buraxılışa qədər proses qüsursuz idi. Bizim vizyonumuzu dərhal başa düşdülər."
+        },
+        "t4": {
+            "name": "Kevin Torres",
+            "role": "CTO",
+            "text": "Bu komandanın texniki dərinliyi heyrətamizdir. Daxili komandamızın aylarca mübarizə apardığı mürəkkəb problemləri günlərdə həll etdilər."
+        }
+    },
+    "counter": {
+        "market": "Bazarda İllərimiz",
+        "specialists": "Yüksək Səviyyəli Mütəxəssislər",
+        "games": "Tamamlanan Oyunlar",
+        "clients": "Müştəri Tövsiyəsi"
+    },
+    "checkout": {
+        "title": "Ödəniş",
+        "current": "Ödəniş",
+        "selectOne": "Birini Seçin",
+        "creditDebit": "Kredit/Debet Kartlar",
+        "paypal": "PayPal",
+        "payoneer": "Payoneer",
+        "visa": "Visa",
+        "mastercard": "Mastercard",
+        "fastpay": "Fastpay",
+        "billingAddress": "Ödəniş Ünvanı",
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "email": "E-poçt",
+        "address": "Ünvan",
+        "paymentMethods": "Ödəniş Üsulları",
+        "cardNumber": "Kart Nömrəsi",
+        "expiryDate": "Son İstifadə Tarixi",
+        "cvv": "Cvc / Cvv",
+        "cvvPlaceholder": "3 Rəqəm",
+        "nameOnCard": "Kartdakı Ad",
+        "namePlaceholder": "Ad",
+        "saveCard": "Növbəti Ödənişim Üçün Yadda Saxla",
+        "payNow": "İndi Ödə",
+        "orderSummary": "Sifariş Xülasəsi",
+        "subtotal": "Aralıq cəm",
+        "total": "Cəmi",
+        "coupon": "Kupon Kodu",
+        "apply": "Tətbiq Et",
+        "processing": "Emal edilir..."
+    },
+    "testimonialPage": {
+        "title": "Rəylər",
+        "current": "Rəylər",
+        "error": "Xəta:"
+    },
+    "contact": {
+        "title": "Bizimlə Əlaqə",
+        "current": "Bizimlə Əlaqə"
+    },
+    "gameDetails": {
+        "title": "Oyunlarımız",
+        "current": "Oyunlarımız",
+        "error": "Xəta:"
+    },
+    "aboutUs": {
+        "title": "Haqqımızda",
+        "current": "Haqqımızda"
+    },
+    "promoSection": {
+        "marqueeRow1": "Son Dayaq Çempionatı",
+        "marqueeRow2": "Oyun Bitti, Döyüşçünün Hökmranlığı",
+        "leftTag": "Dünyanın Ən Yaxşı Oyun İmkanları",
+        "leftTitle": "Əfsanələri Yarat",
+        "leftTitleBr": "Oyun Dünyası!",
+        "leftBtn": "Daha Çox Bax",
+        "rightTag": "Ən Son Oyunu Burax",
+        "rightTitle": "Oyna, Güclən,",
+        "rightTitleBr": "Qalib Gəl!",
+        "rightBtn": "Daha Çox Bax"
+    },
+    "acs": {
+        "tag": "Oyun Aksesuarları",
+        "title": "Oyun Aksesuarlarını Əldə Et",
+        "loading": "Yüklənir...",
+        "error": "Xəta:",
+        "regular_price": "Əsas Qiymət:",
+        "discount_price": "Endirimli Qiymət:",
+        "code": "Kod:",
+        "status": "Status:",
+        "in_stock": "STOKDA VAR",
+        "reviews": "(24 Müştəri Rəyi)",
+        "add_to_cart": "Səbətə Əlavə Et",
+        "buy_now": "İndi Al",
+        "add_to_wishlist": "İstək Siyahısına Əlavə Et",
+        "added_to_wishlist": "İstək Siyahısına Əlavə Edildi",
+        "brand": "XPORTS GEAR",
+        "off": "ENDİRİM",
+        "like": "Bəyən",
+        "add_to_cart_aria": "Səbətə Əlavə Et",
+        "quick_view": "Sürətli Baxış",
+        "view_detail": "Detallara Bax"
+    },
+    "auth": {
+        "welcomeBack": "XOŞ GƏLDİNİZ",
+        "loginAccount": "HESABA DAXİL OLUN",
+        "loginSubtitle": "Hesabınıza daxil olmaq üçün məlumatlarınızı daxil edin",
+        "email": "ELEKTRONPoçt ÜNVANı",
+        "emailPlaceholder": "E-poçtunuzu daxil edin",
+        "password": "ŞİFRƏ",
+        "passwordPlaceholder": "Şifrənizi daxil edin",
+        "login": "DAXİL OL",
+        "loading": "YÜKLƏNIR...",
+        "noAccount": "Hesabınız yoxdur?",
+        "register": "QEYDİYYAT",
+        "signIn": "DAXİL OL",
+        "createAccount": "HESAB YARAT",
+        "fullName": "AD SOYAD",
+        "confirmPassword": "ŞİFRƏNİ TƏSDİQLƏ",
+        "phone": "TELEFON NÖMRƏSİ",
+        "haveAccount": "Artıq hesabınız var?",
+        "joinUs": "BİZƏ QOŞULUN",
+        "logout": "ÇIXIŞ",
+        "registerSubtitle": "Oyun səyahətinizə başlamaq üçün qeydiyyatdan keçin",
+        "accountRed": "YARAT",
+        "fullNamePlaceholder": "Adınızı daxil edin",
+        "phonePlaceholder": "Telefon nömrənizi daxil edin",
+        "confirmPasswordPlaceholder": "Şifrənizi təkrarlayın",
+        "passwordMismatch": "Şifrələr uyğun gəlmir",
+        "passwordShort": "Şifrə ən azı 6 simvol olmalıdır",
+        "createAccountBtn": "HESAB YARAT"
+    },
+    "shop": {
+        "title": "MAĞAZAMIZ",
+        "ourProducts": "MƏHSULLARIMİZ",
+        "search": "Məhsul axtar...",
+        "sortDefault": "Standart sıralama",
+        "sortPriceAsc": "Qiymət: Azdan Çoxa",
+        "sortPriceDesc": "Qiymət: Çoxdan Aza",
+        "sortName": "Ad: A-Z",
+        "showing": "Göstərilir",
+        "of": "/",
+        "products": "məhsul",
+        "noProducts": "Məhsul tapılmadı.",
+        "loading": "Yüklənir...",
+        "addToCart": "SƏBƏTƏ ƏLAVƏ ET",
+        "buyNow": "İNDİ AL",
+        "addToWishlist": "İSTƏK SİYAHISINA ƏLAVƏ ET",
+        "addedToWishlist": "İSTƏK SİYAHISINA ƏLAVƏEDİLDİ",
+        "inStock": "Stokda Var",
+        "productDetails": "MƏHSUL DETALLARI",
+        "relatedProducts": "OXŞAR MƏHSULLAR",
+        "moreProducts": "DAHA ÇOXMƏHSUL"
+    },
+    "faq": {
+        "title": "SSS",
+        "current": "SSS",
+        "heading": "TƏZ-TEZ SORUŞULAN SUALLAR",
+        "desc": "Məhsullarımız və xidmətlərimiz haqqında ən çox soruşulan suallara cavab tapın.",
+        "needHelp": "KÖMƏK LAZIMDIR?",
+        "needHelpSub": "Axtardığınızı tapa bilmirsiniz? Bizimlə birbaşa əlaqə saxlayın.",
+        "callUs": "Zəng Edin",
+        "mailUs": "E-poçt Yazın",
+        "location": "Ünvanımız",
+        "q1": "Hansı ödəniş üsullarını qəbul edirsiniz?",
+        "a1": "Biz bütün əsas kredit kartlarını, PayPal və bank köçürmələrini qəbul edirik. Bütün əməliyyatlar SSL şifrələməsi ilə qorunur.",
+        "q2": "Çatdırılma nə qədər vaxt aparır?",
+        "a2": "Standart çatdırılma 5–7 iş günü çəkir. Sürətli çatdırılma 2–3 iş günü ərzində mövcuddur.",
+        "q3": "Məhsulu geri qaytara bilərəmmi?",
+        "a3": "Bəli, 30 günlük geri qaytarma siyasətimiz var. Məhsullar istifadə edilməmiş və orijinal qablaşdırmada olmalıdır.",
+        "q4": "Məhsullarınız zəmanətlə gəlirmi?",
+        "a4": "Bütün məhsullarımız minimum 1 illik istehsalçı zəmanəti ilə gəlir. Bəzi məhsullara uzadılmış zəmanət daxildir.",
+        "q5": "Sifarişimi necə izləyə bilərəm?",
+        "a5": "Sifarişiniz göndərildikdən sonra e-poçt vasitəsilə izləmə nömrəsi alacaqsınız. Hesabınızda da sifariş statusunu yoxlaya bilərsiniz."
+    }
+}

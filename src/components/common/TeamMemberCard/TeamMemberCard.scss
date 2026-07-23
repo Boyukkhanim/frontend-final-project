@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700;900&display=swap');
+
+$red: #e8192c;
+$dark: #0d1117;
+$font: 'Chakra Petch', sans-serif;
+
+.tm-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    // Same clip-path language as game-card
+    clip-path: polygon(14px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 14px);
+
+    &__img-wrap {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+    }
+
+    // ── Red overlay slides up from bottom ──────────
+    &__overlay {
+        position: absolute;
+        inset: 0;
+        // gradient: solid red at bottom fading to transparent at top
+        background: linear-gradient(to top,
+                rgba(232, 25, 44, 1) 0%,
+                rgba(232, 25, 44, 0.88) 40%,
+                transparent 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 24px;
+        gap: 0;
+
+        // hidden state — pushed below
+        transform: translateY(101%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    // ── Social icons ───────────────────────────────
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 12px;
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
+
+        a {
+            color: #fff;
+            font-size: 14px;
+            transition: color 0.2s, transform 0.2s;
+
+            &:hover {
+                color: $dark;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    // ── Thin white divider line ─────────────────────
+    &__overlay-line {
+        width: 50px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.5);
+        margin-bottom: 12px;
+        opacity: 0;
+        transition: opacity 0.3s ease 0.15s;
+    }
+
+    // ── Name + Role ────────────────────────────────
+    &__info {
+        text-align: center;
+        opacity: 0;
+        transform: translateY(8px);
+        transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+    }
+
+    &__name {
+        font-family: $font;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.05em;
+        margin: 0 0 4px;
+        line-height: 1.1;
+    }
+
+    &__role {
+        font-family: $font;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0;
+    }
+
+    // ── Hover state ────────────────────────────────
+    &:hover {
+        .tm-card__img-wrap img {
+            transform: scale(1.05);
+        }
+
+        .tm-card__overlay {
+            transform: translateY(0);
+        }
+
+        .tm-card__social,
+        .tm-card__overlay-line,
+        .tm-card__info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

@@ -1,0 +1,215 @@
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+// ── Theme tokens ──────────────────────────────────────────────────────────────
+:root {
+    --auth-bg-page: #0c0f15;
+    --auth-bg-box: #13171f;
+    --auth-bg-input: #0c0f15;
+    --auth-border: #1e2430;
+
+    --auth-text-primary: #ffffff;
+    --auth-text-sub: #6b7280;
+    --auth-text-label: #9ca3af;
+    --auth-placeholder: #374151;
+
+    --auth-error-bg: rgba(232, 25, 44, 0.10);
+    --auth-error-border: rgba(232, 25, 44, 0.30);
+    --auth-error-text: #ff4444;
+}
+
+[data-theme='light'],
+.light {
+    --auth-bg-page: #f0f2f5;
+    --auth-bg-box: #ffffff;
+    --auth-bg-input: #f4f6f9;
+    --auth-border: #e0e4ec;
+
+    --auth-text-primary: #0f1117;
+    --auth-text-sub: #6b7280;
+    --auth-text-label: #4b5563;
+    --auth-placeholder: #9ca3af;
+
+    --auth-error-bg: rgba(232, 25, 44, 0.08);
+    --auth-error-border: rgba(232, 25, 44, 0.25);
+    --auth-error-text: #c0101f;
+}
+
+// ── Page ─────────────────────────────────────────────────────────────────────
+.auth-page {
+    min-height: 100vh;
+    background-color: var(--auth-bg-page);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px 40px;
+    transition: background-color 0.3s;
+
+    @media (max-width: 480px) {
+        padding: 80px 16px 32px;
+    }
+}
+
+// ── Container ─────────────────────────────────────────────────────────────────
+.auth-container {
+    width: 100%;
+    max-width: 480px;
+
+    @media (max-width: 480px) {
+        max-width: 100%;
+    }
+}
+
+// ── Box ───────────────────────────────────────────────────────────────────────
+.auth-box {
+    background: var(--auth-bg-box);
+    border: 1px solid var(--auth-border);
+    border-top: 3px solid $red;
+    padding: 48px 40px;
+    transition: background 0.3s, border-color 0.3s;
+
+    @media (max-width: 600px) {
+        padding: 36px 28px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 28px 18px;
+    }
+}
+
+// ── Header ────────────────────────────────────────────────────────────────────
+.auth-header {
+    margin-bottom: 32px;
+
+    .auth-tag {
+        color: $red;
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-family: $font;
+        font-size: clamp(22px, 5vw, 32px);
+        font-weight: 800;
+        margin: 0 0 8px;
+        text-transform: uppercase;
+        color: var(--auth-text-primary);
+
+        .red {
+            color: $red;
+        }
+    }
+
+    p {
+        font-family: $font;
+        color: var(--auth-text-sub);
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+// ── Error ─────────────────────────────────────────────────────────────────────
+.auth-error {
+    background: var(--auth-error-bg);
+    border: 1px solid var(--auth-error-border);
+    color: var(--auth-error-text);
+    padding: 12px 16px;
+    font-family: $font;
+    font-size: 13px;
+    margin-bottom: 24px;
+}
+
+// ── Form ──────────────────────────────────────────────────────────────────────
+.auth-form {
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-family: $font;
+            color: var(--auth-text-label);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            background: var(--auth-bg-input);
+            border: 1px solid var(--auth-border);
+            color: var(--auth-text-primary);
+            padding: 14px 16px;
+            font-family: $font;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s, background 0.3s;
+            box-sizing: border-box;
+
+            &::placeholder {
+                color: var(--auth-placeholder);
+            }
+
+            &:focus {
+                border-color: $red;
+            }
+
+            @media (max-width: 400px) {
+                padding: 12px 14px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// ── Button ────────────────────────────────────────────────────────────────────
+.auth-btn {
+    width: 100%;
+    background: $red;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-family: $font;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 8px;
+
+    &:hover:not(:disabled) {
+        background: darken($red, 10%);
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+// ── Redirect ──────────────────────────────────────────────────────────────────
+.auth-redirect {
+    text-align: center;
+    font-family: $font;
+    color: var(--auth-text-sub);
+    font-size: 13px;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    a {
+        color: $red;
+        text-decoration: none;
+        font-weight: 700;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

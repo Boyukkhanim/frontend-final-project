@@ -1,0 +1,34 @@
+    $ft-family: "Chakra Petch", sans-serif;
+
+    @mixin hover-style {
+        font-family: $ft-family;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+        letter-spacing: -0.34px;
+        transition: all 0.4s ease-in-out;
+        list-style-type: none;
+        text-decoration: none;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    @mixin hover-style-bootstrap {
+        font-family: $ft-family !important;
+        color: #fff !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
+        font-weight: 700 !important;
+        letter-spacing: -0.34px !important;
+        transition: all 0.4s ease-in-out !important;
+        background-color: transparent !important;
+        list-style-type: none !important;
+        text-decoration: none !important;
+
+        &:hover {
+            color: red !important;
+        }
+    }

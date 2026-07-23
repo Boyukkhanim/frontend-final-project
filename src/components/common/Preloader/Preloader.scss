@@ -1,0 +1,169 @@
+$red: #e8192c;
+$dark: #0d1117;
+$font: 'Chakra Petch', sans-serif;
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    background: $dark;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    opacity: 1;
+    visibility: visible;
+
+    &--fade {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    // spinning circle
+    &__spinner {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        border-bottom-color: $red;
+        animation: preloader-spin 1s linear infinite;
+        margin-bottom: 16px;
+    }
+
+    // glitch logo
+    &__logo {
+        position: relative;
+    }
+
+    &__logo-text {
+        font-family: $font;
+        font-size: clamp(48px, 7vw, 72px);
+        font-weight: 900;
+        color: $red;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        position: relative;
+        display: inline-block;
+        animation: preloader-glitch 2.5s infinite;
+
+        // glitch layers
+        &::before,
+        &::after {
+            content: 'XPORTS';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: $font;
+            font-size: inherit;
+            font-weight: inherit;
+            letter-spacing: inherit;
+        }
+
+        &::before {
+            color: rgba(255, 255, 255, 0.5);
+            animation: preloader-glitch-before 2.5s infinite;
+            clip-path: polygon(0 30%, 100% 30%, 100% 50%, 0 50%);
+        }
+
+        &::after {
+            color: rgba(232, 25, 44, 0.6);
+            animation: preloader-glitch-after 2.5s infinite;
+            clip-path: polygon(0 60%, 100% 60%, 100% 75%, 0 75%);
+        }
+    }
+
+    &__loading {
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.45em;
+        color: $red;
+        text-transform: uppercase;
+        margin: 0;
+    }
+}
+
+@keyframes preloader-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-glitch {
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+    }
+
+    92% {
+        transform: translate(-3px, 1px);
+    }
+
+    94% {
+        transform: translate(3px, -1px);
+    }
+
+    96% {
+        transform: translate(-2px, 2px);
+    }
+
+    98% {
+        transform: translate(2px, -2px);
+    }
+}
+
+@keyframes preloader-glitch-before {
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+        opacity: 0;
+    }
+
+    92% {
+        transform: translate(-4px, 0);
+        opacity: 1;
+    }
+
+    94% {
+        transform: translate(4px, 0);
+        opacity: 1;
+    }
+
+    96% {
+        transform: translate(0);
+        opacity: 0;
+    }
+}
+
+@keyframes preloader-glitch-after {
+
+    0%,
+    90%,
+    100% {
+        transform: translate(0);
+        opacity: 0;
+    }
+
+    93% {
+        transform: translate(4px, 1px);
+        opacity: 1;
+    }
+
+    95% {
+        transform: translate(-3px, -1px);
+        opacity: 1;
+    }
+
+    97% {
+        transform: translate(0);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;900&display=swap');
+
+$red: #e8192c;
+$dark: #0d1117;
+$font: 'Chakra Petch', sans-serif;
+
+.about-page {
+    width: 100%;
+    background-color: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.our-blog {
+    width: 100%;
+    background-color: #0B0E13;
+    padding: 150px 40px;
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
+
+    @media (max-width: 768px) {
+        padding: 60px 16px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 600px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 56px;
+    }
+
+    &__page-btn {
+        font-family: 'Chakra Petch', sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #fff;
+        background: transparent;
+        border: 1px solid #2a2f3a;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        transition: background-color 0.25s, border-color 0.25s, color 0.25s;
+
+        &:hover {
+            background-color: #e8192c;
+            border-color: #e8192c;
+        }
+
+        &.active {
+            background-color: #e8192c;
+            border-color: #e8192c;
+            color: #fff;
+        }
+    }
+}

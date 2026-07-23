@@ -1,0 +1,620 @@
+@import '../../../components/layout/Header/mixin';
+
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+// ── Theme tokens ──────────────────────────────────────────────────────────────
+// Dark mode (default)
+:root {
+    --sd-bg-page: #0d1117;
+    --sd-bg-card: #13171f;
+    --sd-bg-input: #13171f;
+    --sd-bg-qty: #0d1117;
+    --sd-border: #1e2430;
+    --sd-border-soft: #2a2f3a;
+
+    --sd-text-primary: #ffffff;
+    --sd-text-secondary: #9ca3af;
+    --sd-text-muted: #6b7280;
+    --sd-text-faint: #444444;
+    --sd-text-code: #ffffff;
+
+    --sd-star-empty: #2a2f3a;
+    --sd-status-stock: #4caf50;
+
+    --sd-tab-inactive: #6b7280;
+    --sd-tab-hover: #ffffff;
+    --sd-tab-border: #1e2430;
+
+    --sd-review-bg: #13171f;
+    --sd-specs-border: #1e2430;
+
+    --sd-btn-buy-bg: transparent;
+    --sd-btn-buy-border: #2a2f3a;
+    --sd-btn-buy-color: #ffffff;
+
+    --sd-wishlist-bg: transparent;
+    --sd-wishlist-border: #2a2f3a;
+    --sd-wishlist-color: #888888;
+}
+
+// Light mode overrides
+[data-theme='light'],
+.light {
+    --sd-bg-page: #f0f2f5;
+    --sd-bg-card: #ffffff;
+    --sd-bg-input: #f8f9fb;
+    --sd-bg-qty: #f0f2f5;
+    --sd-border: #e0e4ec;
+    --sd-border-soft: #d0d5de;
+
+    --sd-text-primary: #0f1117;
+    --sd-text-secondary: #4b5563;
+    --sd-text-muted: #6b7280;
+    --sd-text-faint: #9ca3af;
+    --sd-text-code: #0f1117;
+
+    --sd-star-empty: #d1d5db;
+    --sd-status-stock: #16a34a;
+
+    --sd-tab-inactive: #6b7280;
+    --sd-tab-hover: #0f1117;
+    --sd-tab-border: #e0e4ec;
+
+    --sd-review-bg: #f8f9fb;
+    --sd-specs-border: #e0e4ec;
+
+    --sd-btn-buy-bg: transparent;
+    --sd-btn-buy-border: #d0d5de;
+    --sd-btn-buy-color: #0f1117;
+
+    --sd-wishlist-bg: transparent;
+    --sd-wishlist-border: #d0d5de;
+    --sd-wishlist-color: #6b7280;
+}
+
+// ── Page shell ────────────────────────────────────────────────────────────────
+.sd-page {
+    width: 100%;
+    background-color: var(--sd-bg-page);
+    min-height: 100vh;
+
+    .red {
+        color: $red;
+    }
+}
+
+.sd-status {
+    min-height: 100vh;
+    background: var(--sd-bg-page);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--sd-text-primary);
+    font-family: $font;
+    font-size: 20px;
+    padding-top: 80px;
+
+    &--error {
+        color: $red;
+    }
+}
+
+// ── Main product section ──────────────────────────────────────────────────────
+.sd-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 60px 0 48px;
+    align-items: start;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0 32px;
+    }
+
+    @media (max-width: 480px) {
+        gap: 24px;
+        padding: 28px 0 24px;
+    }
+
+    // ── Image ──
+    &__img-wrap {
+        position: relative;
+        background: var(--sd-bg-card);
+        border: 1px solid var(--sd-border);
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: border-color 0.25s;
+
+        &:hover {
+            border-color: $red;
+        }
+
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        @media (max-width: 480px) {
+            padding: 24px;
+        }
+    }
+
+    &__badge {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: $red;
+        color: #fff;
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        padding: 4px 10px;
+    }
+
+    // ── Info panel ──
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: $red;
+    }
+
+    &__brand-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: $red;
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-family: $font;
+        font-size: clamp(20px, 3vw, 32px);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--sd-text-primary);
+        letter-spacing: 0.04em;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    &__stars {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        flex-wrap: wrap;
+    }
+
+    &__star {
+        font-size: 16px;
+        color: var(--sd-star-empty);
+
+        &.filled {
+            color: $red;
+        }
+    }
+
+    &__review {
+        font-size: 11px;
+        color: var(--sd-text-muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-left: 6px;
+        font-family: $font;
+    }
+
+    &__divider {
+        height: 1px;
+        background: var(--sd-border);
+    }
+
+    // ── Prices ──
+    &__prices {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    &__price-new {
+        font-family: $font;
+        font-size: clamp(24px, 4vw, 32px);
+        font-weight: 900;
+        color: $red;
+    }
+
+    &__price-old {
+        font-family: $font;
+        font-size: 18px;
+        color: var(--sd-text-faint);
+        text-decoration: line-through;
+    }
+
+    &__price-badge {
+        background: $red;
+        color: #fff;
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        padding: 4px 8px;
+        letter-spacing: 0.08em;
+    }
+
+    // ── Meta labels ──
+    &__status,
+    &__code {
+        font-family: $font;
+        font-size: 12px;
+        color: var(--sd-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+
+    &__status span {
+        color: var(--sd-status-stock);
+        font-weight: 700;
+    }
+
+    &__code span {
+        color: var(--sd-text-primary);
+        font-weight: 700;
+    }
+
+    // ── Action row ──
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+
+        @media (max-width: 480px) {
+            gap: 8px;
+        }
+    }
+
+    &__qty {
+        display: flex;
+        align-items: center;
+        border: 1px solid var(--sd-border-soft);
+        overflow: hidden;
+        flex-shrink: 0;
+
+        button {
+            width: 36px;
+            height: 44px;
+            background: var(--sd-bg-card);
+            border: none;
+            color: var(--sd-text-primary);
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            font-family: $font;
+
+            &:hover {
+                background: $red;
+                color: #fff;
+            }
+        }
+
+        span {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $font;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--sd-text-primary);
+            background: var(--sd-bg-qty);
+            border-left: 1px solid var(--sd-border-soft);
+            border-right: 1px solid var(--sd-border-soft);
+        }
+    }
+
+    &__cart-btn {
+        flex: 1;
+        min-width: 120px;
+        height: 44px;
+        background: $red;
+        border: none;
+        color: #fff;
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+            background: darken($red, 10%);
+        }
+    }
+
+    &__buy-btn {
+        height: 44px;
+        padding: 0 20px;
+        border: 1px solid var(--sd-btn-buy-border);
+        background: var(--sd-btn-buy-bg);
+        color: var(--sd-btn-buy-color);
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        cursor: pointer;
+        transition: border-color 0.2s, color 0.2s;
+        white-space: nowrap;
+
+        &:hover {
+            border-color: $red;
+            color: $red;
+        }
+
+        @media (max-width: 480px) {
+            padding: 0 14px;
+        }
+    }
+
+    &__wishlist {
+        background: var(--sd-wishlist-bg);
+        border: 1px solid var(--sd-wishlist-border);
+        color: var(--sd-wishlist-color);
+        padding: 10px 20px;
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: border-color 0.2s, color 0.2s;
+        width: 100%;
+
+        &:hover,
+        &.active {
+            border-color: $red;
+            color: $red;
+        }
+    }
+}
+
+// ── Tabs ──────────────────────────────────────────────────────────────────────
+.sd-tabs {
+    margin-bottom: 60px;
+
+    @media (max-width: 480px) {
+        margin-bottom: 40px;
+    }
+
+    &__nav {
+        display: flex;
+        border-bottom: 1px solid var(--sd-tab-border);
+        margin-bottom: 32px;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        background: none;
+        border: none;
+        border-bottom: 3px solid transparent;
+        color: var(--sd-tab-inactive);
+        font-family: $font;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        padding: 14px 24px;
+        cursor: pointer;
+        transition: color 0.2s, border-color 0.2s;
+        margin-bottom: -1px;
+        white-space: nowrap;
+
+        &:hover {
+            color: var(--sd-tab-hover);
+        }
+
+        &.active {
+            color: var(--sd-text-primary);
+            border-bottom-color: $red;
+        }
+
+        @media (max-width: 480px) {
+            padding: 12px 16px;
+            font-size: 11px;
+        }
+    }
+
+    &__panel {
+        p {
+            font-family: $font;
+            font-size: 13px;
+            color: var(--sd-text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+// ── Specs table ───────────────────────────────────────────────────────────────
+.sd-specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: $font;
+
+    tr {
+        border-bottom: 1px solid var(--sd-specs-border);
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    td {
+        padding: 12px 16px;
+        font-size: 13px;
+
+        &:first-child {
+            color: var(--sd-text-muted);
+            width: 160px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        &:last-child {
+            color: var(--sd-text-primary);
+            font-weight: 600;
+        }
+
+        @media (max-width: 480px) {
+            padding: 10px 12px;
+            font-size: 12px;
+
+            &:first-child {
+                width: 120px;
+            }
+        }
+    }
+}
+
+// ── Review card ───────────────────────────────────────────────────────────────
+.sd-review {
+    background: var(--sd-review-bg);
+    border: 1px solid var(--sd-border);
+    padding: 20px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__avatar {
+        width: 40px;
+        height: 40px;
+        background: $red;
+        color: #fff;
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__name {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--sd-text-primary);
+        margin: 0 0 4px;
+    }
+
+    &__stars {
+        color: $red;
+        font-size: 13px;
+    }
+
+    &__text {
+        font-family: $font;
+        font-size: 12px;
+        color: var(--sd-text-secondary);
+        line-height: 1.7;
+        margin: 0;
+    }
+}
+
+// ── Related products ──────────────────────────────────────────────────────────
+.sd-related {
+    padding-bottom: 80px;
+
+    @media (max-width: 480px) {
+        padding-bottom: 50px;
+    }
+
+    &__header {
+        margin-bottom: 32px;
+
+        @media (max-width: 480px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--sd-text-muted);
+        margin-bottom: 12px;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background: $red;
+        }
+    }
+
+    h2 {
+        font-family: $font;
+        font-size: clamp(22px, 4vw, 40px);
+        font-weight: 900;
+        color: var(--sd-text-primary);
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        @media (max-width: 360px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

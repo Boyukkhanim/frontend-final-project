@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700;900&display=swap');
+
+$red: #e8192c;
+$font: 'Chakra Petch', sans-serif;
+
+// ── Theme tokens ──────────────────────────────────────────────────────────────
+:root {
+    --faq-bg-page: #0d1117;
+    --faq-bg-item: #13171f;
+    --faq-border: #1e232d;
+
+    --faq-text-primary: #ffffff;
+    --faq-text-desc: #888888;
+    --faq-text-answer: #aaaaaa;
+    --faq-icon-color: #888888;
+}
+
+[data-theme='light'],
+.light {
+    --faq-bg-page: #f0f2f5;
+    --faq-bg-item: #ffffff;
+    --faq-border: #e0e4ec;
+
+    --faq-text-primary: #0f1117;
+    --faq-text-desc: #6b7280;
+    --faq-text-answer: #4b5563;
+    --faq-icon-color: #9ca3af;
+}
+
+// ── Page shell ────────────────────────────────────────────────────────────────
+.about-page {
+    width: 100%;
+    background-color: var(--faq-bg-page);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+// ── FAQ Section ───────────────────────────────────────────────────────────────
+.faq-section {
+    padding: 150px 60px 100px;
+
+    @media (max-width: 1024px) {
+        padding: 48px 32px 80px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 40px 16px 60px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: start;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        font-family: $font;
+        font-size: clamp(20px, 3vw, 28px);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: var(--faq-text-primary);
+        letter-spacing: 0.04em;
+        margin: 0 0 16px;
+    }
+
+    &__desc {
+        font-family: $font;
+        font-size: 11px;
+        color: var(--faq-text-desc);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        line-height: 1.8;
+        margin: 0 0 32px;
+    }
+}
+
+// ── Accordion ─────────────────────────────────────────────────────────────────
+.faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__item {
+        background: var(--faq-bg-item);
+        border: 1px solid var(--faq-border);
+        overflow: hidden;
+        transition: border-color 0.3s, background 0.3s;
+
+        &--open {
+            border-color: $red;
+
+            .faq-accordion__icon {
+                transform: rotate(180deg);
+                color: $red;
+            }
+        }
+    }
+
+    &__header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 20px 24px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+
+        @media (max-width: 480px) {
+            padding: 16px;
+            gap: 12px;
+        }
+    }
+
+    &__num {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        color: $red;
+        flex-shrink: 0;
+        letter-spacing: 0.05em;
+    }
+
+    &__question {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: capitalize;
+        color: var(--faq-text-primary);
+        letter-spacing: 0.03em;
+        flex: 1;
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+
+    &__icon {
+        font-size: 14px;
+        color: var(--faq-icon-color);
+        flex-shrink: 0;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    &__body {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+
+        .faq-accordion__item--open & {
+            max-height: 300px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__answer {
+        font-family: $font;
+        font-size: 11.5px;
+        color: var(--faq-text-answer);
+        line-height: 1.8;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        padding: 0 24px;
+        margin: 0;
+
+        @media (max-width: 480px) {
+            padding: 0 16px;
+            font-size: 11px;
+        }
+    }
+}
+
+// ── Contact Card (always red gradient — no theme change inside) ───────────────
+.faq-contact {
+    background: linear-gradient(135deg, #c0101f 0%, $red 60%, #a00d1a 100%);
+    padding: 40px 32px;
+    clip-path: polygon(14px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 14px);
+    position: sticky;
+    top: 100px;
+
+    @media (max-width: 1024px) {
+        position: static;
+        max-width: 480px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 28px 20px;
+        clip-path: polygon(10px 0%, 100% 0%, 100% 100%, 0% 100%, 0% 10px);
+    }
+
+    &__title {
+        font-family: $font;
+        font-size: clamp(22px, 3vw, 30px);
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 0.04em;
+        margin: 0 0 8px;
+    }
+
+    &__sub {
+        font-family: $font;
+        font-size: 10px;
+        color: rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        margin: 0;
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 24px 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        @media (max-width: 480px) {
+            gap: 18px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__icon-wrap {
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: #fff;
+        font-size: 15px;
+
+        @media (max-width: 480px) {
+            width: 36px;
+            height: 36px;
+            font-size: 13px;
+        }
+    }
+
+    &__label {
+        font-family: $font;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.75);
+        margin: 0 0 4px;
+    }
+
+    &__value {
+        font-family: $font;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #fff;
+        margin: 0;
+
+        @media (max-width: 480px) {
+            font-size: 12px;
+        }
+    }
+}
