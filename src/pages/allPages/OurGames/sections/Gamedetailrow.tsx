@@ -1,5 +1,5 @@
 import type { Game } from '@/hooks/useGames'
-import './GameDetailRow.scss'
+import './Gamedetailrow.scss'
 
 type Props = {
     game: Game
