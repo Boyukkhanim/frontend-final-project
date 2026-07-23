@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useGameAccessoryById, useGameAccessories } from '@/hooks/useGameAccessories'
 import { useAppDispatch } from '@/hooks/useAppDispatch'

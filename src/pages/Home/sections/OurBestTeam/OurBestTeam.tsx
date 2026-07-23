@@ -66,7 +66,6 @@ const OurBestTeam = () => {
     };
 
     const visibleMembers = getVisibleMembers();
-    const activeMember = members[activeIndex];
 
     return (
         <section

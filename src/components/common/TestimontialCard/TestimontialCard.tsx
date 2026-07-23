@@ -10,7 +10,6 @@ type Props = {
 }
 
 const TestimonialCard = ({ name, role, text, initials, imageUrl }: Props) => {
-    const { localize } = useLocalizedField()
     return (
         <div className="t-card">
             <div className="t-card__qmark">"</div>
